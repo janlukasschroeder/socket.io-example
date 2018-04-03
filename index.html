@@ -27,6 +27,9 @@
         socket.on('chat message', function(msg){
             $('#messages').append($('<li>').text(msg));
         });
+        socket.on('notification', function(msg){
+            $('#messages').append($('<li>').text(msg));
+        });
     });
 </script>
 
